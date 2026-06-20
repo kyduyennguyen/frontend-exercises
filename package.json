@@ -1,0 +1,24 @@
+{
+  "name": "frontend-exercises",
+  "version": "1.0.0",
+  "description": "A collection of frontend exercises, challenges, and projects designed to practice and demonstrate skills in HTML, CSS, JavaScript, frameworks, and related tooling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyduyennguyen/frontend-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kyduyennguyen/frontend-exercises/issues"
+  },
+  "homepage": "https://github.com/kyduyennguyen/frontend-exercises#readme",
+  "devDependencies": {
+    "prettier": "^3.8.4"
+  }
+}

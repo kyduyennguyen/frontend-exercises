@@ -1,0 +1,20 @@
+#title {
+  color: blue;
+}
+
+#title-color {
+  color: green;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.blue-box {
+  background-color: blue;
+}
