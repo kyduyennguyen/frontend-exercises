@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/UX Strategy and Learning Guide | Hướng dẫn học UI/UX</title>
+    <meta
+      name="description"
+      content="Professional UI/UX overview, definitions, learning requirements, and roadmap in bilingual English-Vietnamese."
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #0b1120;
+        color: #e2e8f0;
+        line-height: 1.7;
+      }
+
+      header {
+        background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+        color: #f8fafc;
+        padding: 50px 24px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #e2e8f0;
+      }
+
+      header p {
+        max-width: 780px;
+        margin: 0 auto;
+        font-size: 1rem;
+        opacity: 0.9;
+        line-height: 1.8;
+        color: #cbd5e1;
+      }
+
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      section {
+        background: #111827;
+        margin: 32px 0;
+        padding: 36px;
+        border-radius: 24px;
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.38);
+        border: 1px solid rgba(148, 163, 184, 0.12);
+      }
+
+      section h2 {
+        font-size: 1.85rem;
+        color: #93c5fd;
+        margin-bottom: 20px;
+        border-bottom: 3px solid rgba(59, 130, 246, 0.3);
+        padding-bottom: 12px;
+      }
+
+      section h3,
+      section h4 {
+        color: #bfdbfe;
+      }
+
+      .columns,
+      .grid-2 {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card {
+        background: #15203b;
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        border-radius: 18px;
+        padding: 26px;
+      }
+
+      .card strong {
+        color: #ffffff;
+      }
+
+      .card p {
+        font-size: 0.98rem;
+        color: #cbd5e1;
+      }
+
+      .card ul {
+        margin-top: 14px;
+        padding-left: 20px;
+        color: #cbd5e1;
+        list-style: disc;
+      }
+
+      .card li {
+        margin-bottom: 10px;
+      }
+
+      .table-wrapper {
+        overflow-x: auto;
+        margin-top: 24px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 640px;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        text-align: left;
+        vertical-align: top;
+        color: #e2e8f0;
+      }
+
+      th {
+        background: rgba(59, 130, 246, 0.16);
+        color: #93c5fd;
+        font-weight: 600;
+      }
+
+      tr:nth-child(even) {
+        background: rgba(148, 163, 184, 0.05);
+      }
+
+      .roadmap {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .roadmap-item {
+        background: linear-gradient(135deg, #2563eb 0%, #0f172a 100%);
+        color: #ffffff;
+        border-radius: 20px;
+        padding: 24px 18px;
+        box-shadow: 0 14px 30px rgba(37, 99, 235, 0.22);
+        text-align: center;
+      }
+
+      .roadmap-item h4 {
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+
+      .roadmap-item p {
+        margin: 0;
+        font-size: 0.96rem;
+        opacity: 0.95;
+        line-height: 1.6;
+      }
+
+      .note-list {
+        margin-top: 22px;
+        padding-left: 20px;
+        color: #cbd5e1;
+      }
+
+      .note-list li {
+        margin-bottom: 12px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 26px 24px;
+        color: #cbd5e1;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 900px) {
+        .columns,
+        .grid-2,
+        .roadmap {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        header {
+          padding: 32px 18px;
+        }
+
+        section {
+          padding: 28px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>UI/UX Strategy and Learning Guide</h1>
+      <p>
+        Professional overview of user interface and experience design concepts,
+        with a bilingual structure for clear learning. | Tổng quan chuyên nghiệp
+        về thiết kế giao diện và trải nghiệm, trình bày song ngữ để học dễ dàng.
+      </p>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Overview of UI/UX | Tổng quan về UI/UX</h2>
+        <div class="columns">
+          <div class="card">
+            <h3>What UI/UX Means | UI/UX là gì</h3>
+            <p>
+              UI and UX are interrelated disciplines in digital product design.
+              UI focuses on presentation, while UX focuses on usability, value,
+              and satisfaction.
+            </p>
+            <p>
+              UI và UX là hai lĩnh vực liên quan trong thiết kế sản phẩm kỹ
+              thuật số. UI tập trung vào phần hiển thị, trong khi UX tập trung
+              vào tính dễ dùng, giá trị và sự hài lòng.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Why It Matters | Tại sao quan trọng</h3>
+            <p>
+              Good UI/UX makes products intuitive, reduces friction, and
+              increases adoption and retention.
+            </p>
+            <p>
+              UI/UX tốt giúp sản phẩm dễ hiểu, giảm ma sát và tăng khả năng sử
+              dụng lẫn giữ chân người dùng.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Definition: UX vs UI | Định nghĩa: UX và UI</h2>
+        <div class="columns">
+          <div class="card">
+            <h4>UI – User Interface</h4>
+            <p>
+              Focuses on the visual layer of the product, including layout,
+              visual design, and interaction design.
+            </p>
+            <ul>
+              <li>
+                Colors, typography, and iconography | Màu sắc, typography và
+                biểu tượng
+              </li>
+              <li>
+                Layout, spacing, and visual hierarchy | Bố cục, khoảng cách và
+                trật tự thị giác
+              </li>
+              <li>
+                Interactive components and visual feedback | Thành phần tương
+                tác và phản hồi hình ảnh
+              </li>
+              <li>
+                Motion and visual transitions | Hiệu ứng chuyển động và chuyển
+                tiếp
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>UX – User Experience</h4>
+            <p>
+              Focuses on how users navigate a product, the ease of completing
+              tasks, and whether the product meets user goals.
+            </p>
+            <ul>
+              <li>
+                User research and insights | Nghiên cứu người dùng và insight
+              </li>
+              <li>Information architecture | Kiến trúc thông tin</li>
+              <li>User flows and wireframes | Luồng người dùng và wireframe</li>
+              <li>
+                Usability testing and validation | Kiểm tra khả năng sử dụng và
+                xác nhận
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Criteria | Tiêu chí</th>
+                <th>UI</th>
+                <th>UX</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Focus | Tập trung</td>
+                <td>
+                  Visual structure and interface behavior | Cấu trúc thị giác và
+                  hành vi giao diện
+                </td>
+                <td>
+                  Overall product experience | Trải nghiệm tổng thể của sản phẩm
+                </td>
+              </tr>
+              <tr>
+                <td>Primary outcome | Kết quả chính</td>
+                <td>
+                  Interface screens and components | Màn hình và thành phần giao
+                  diện
+                </td>
+                <td>
+                  User journeys and satisfaction | Hành trình người dùng và sự
+                  hài lòng
+                </td>
+              </tr>
+              <tr>
+                <td>Success measure | Đo lường thành công</td>
+                <td>
+                  Visual quality and consistency | Chất lượng thị giác và tính
+                  nhất quán
+                </td>
+                <td>
+                  Task success and usability | Hoàn thành nhiệm vụ và khả năng
+                  sử dụng
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Learning UX | Học UX</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h4>Core knowledge | Kiến thức cốt lõi</h4>
+            <ul>
+              <li>User psychology | Tâm lý người dùng</li>
+              <li>Research methods | Phương pháp nghiên cứu</li>
+              <li>Information architecture | Kiến trúc thông tin</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Practical skills | Kỹ năng thực tế</h4>
+            <ul>
+              <li>Wireframing and prototyping | Wireframe và prototype</li>
+              <li>Usability testing | Kiểm tra khả năng sử dụng</li>
+              <li>Design thinking | Tư duy thiết kế</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Tools | Công cụ</h4>
+            <ul>
+              <li>Figma, Miro, Notion</li>
+              <li>Maze, UserTesting</li>
+              <li>Google Analytics</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Mindset | Tư duy</h4>
+            <ul>
+              <li>Empathy | Đồng cảm</li>
+              <li>Analytical thinking | Tư duy phân tích</li>
+              <li>Iterative improvement | Cải tiến lặp lại</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="columns" style="margin-top: 24px">
+          <div class="card">
+            <h3>
+              Start with user research | Bắt đầu với nghiên cứu người dùng
+            </h3>
+            <p>
+              Understand the user problem first and collect qualitative and
+              quantitative insights.
+            </p>
+            <p>
+              Hiểu rõ vấn đề người dùng trước và thu thập insight định tính cùng
+              định lượng.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Build case studies | Xây dựng case study</h3>
+            <p>
+              Document the process from research to validation to demonstrate
+              your design thinking.
+            </p>
+            <p>
+              Ghi lại quá trình từ nghiên cứu đến xác nhận để thể hiện tư duy
+              thiết kế của bạn.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Learning UI | Học UI</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h4>Design foundation | Nền tảng thiết kế</h4>
+            <ul>
+              <li>Color theory | Lý thuyết màu sắc</li>
+              <li>Typography | Typography</li>
+              <li>Layout systems | Hệ thống bố cục</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Tools | Công cụ</h4>
+            <ul>
+              <li>Figma, Adobe XD, Sketch</li>
+              <li>Adobe Illustrator, Photoshop</li>
+              <li>Prototyping platforms | Nền tảng prototype</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Design skills | Kỹ năng thiết kế</h4>
+            <ul>
+              <li>Visual consistency | Tính nhất quán</li>
+              <li>Component systems | Hệ thống component</li>
+              <li>Accessibility basics | Accessibility cơ bản</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Supporting knowledge | Kiến thức hỗ trợ</h4>
+            <ul>
+              <li>Responsive design | Responsive design</li>
+              <li>Motion design | Thiết kế chuyển động</li>
+              <li>Design systems | Design systems</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="columns" style="margin-top: 24px">
+          <div class="card">
+            <h3>Practice reusable patterns | Thực hành mẫu tái sử dụng</h3>
+            <p>
+              Create consistent UI components and define interaction standards
+              for each screen.
+            </p>
+            <p>
+              Thiết kế component nhất quán và xác định tiêu chuẩn tương tác cho
+              mỗi màn hình.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Review for clarity | Đánh giá để rõ ràng</h3>
+            <p>
+              Refine spacing, contrast, and hierarchy to make interfaces easier
+              to scan and use.
+            </p>
+            <p>
+              Hoàn thiện khoảng cách, độ tương phản và trật tự để giao diện dễ
+              đọc và dễ dùng hơn.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Learning Roadmap | Lộ trình học</h2>
+        <div class="roadmap">
+          <div class="roadmap-item">
+            <h4>Phase 1</h4>
+            <p>Foundation | Nền tảng</p>
+          </div>
+          <div class="roadmap-item">
+            <h4>Phase 2</h4>
+            <p>Design fundamentals | Cơ bản</p>
+          </div>
+          <div class="roadmap-item">
+            <h4>Phase 3</h4>
+            <p>Tools & workflows | Công cụ</p>
+          </div>
+          <div class="roadmap-item">
+            <h4>Phase 4</h4>
+            <p>Research & validation | Nghiên cứu</p>
+          </div>
+          <div class="roadmap-item">
+            <h4>Phase 5</h4>
+            <p>Portfolio & career | Portfolio & nghề nghiệp</p>
+          </div>
+        </div>
+        <ul class="note-list">
+          <li>
+            Phase 1-2: Understand principles and build a strong foundation. |
+            Giai đoạn 1-2: Hiểu nguyên tắc và xây nền tảng vững chắc.
+          </li>
+          <li>
+            Phase 3-5: Apply tools, validate solutions with users, and prepare
+            your portfolio. | Giai đoạn 3-5: Áp dụng công cụ, xác thực giải pháp
+            với người dùng và chuẩn bị portfolio.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Explore deeper | Khám phá sâu hơn</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h4>More on UI | Tìm hiểu sâu UI</h4>
+            <p>
+              Dive into interface design details, component systems, and
+              practical UI strategies.
+            </p>
+            <p>
+              Khám phá chi tiết thiết kế giao diện, hệ thống component và chiến
+              lược UI thực tế.
+            </p>
+            <p>
+              <a href="ui-details.html">Go to UI Page → | Đến trang UI →</a>
+            </p>
+          </div>
+          <div class="card">
+            <h4>More on UX | Tìm hiểu sâu UX</h4>
+            <p>
+              Learn deeper UX practices, research methods, testing, and user
+              journeys.
+            </p>
+            <p>
+              Học thêm về thực hành UX, phương pháp nghiên cứu, kiểm tra và hành
+              trình người dùng.
+            </p>
+            <p>
+              <a href="ux-details.html">Go to UX Page → | Đến trang UX →</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>UI/UX Learning Guide | Hướng dẫn học UI/UX</p>
+    </footer>
+  </body>
+</html>

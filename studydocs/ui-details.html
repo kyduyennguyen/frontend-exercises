@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Dive into UI | UI Chi Tiết</title>
+    <meta
+      name="description"
+      content="Detailed UI concepts, learning path, tips, and practical guidance in English and Vietnamese."
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #0b1120;
+        color: #e2e8f0;
+        line-height: 1.75;
+      }
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 26px;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      header h1 {
+        font-size: 2.4rem;
+        margin-bottom: 12px;
+        color: #ffffff;
+      }
+      header p {
+        max-width: 760px;
+        margin: 0 auto;
+        color: #cbd5e1;
+        opacity: 0.95;
+      }
+      section {
+        background: #111827;
+        border: 1px solid rgba(148, 163, 184, 0.16);
+        border-radius: 24px;
+        padding: 30px;
+        margin-bottom: 28px;
+      }
+      section h2 {
+        font-size: 1.85rem;
+        color: #93c5fd;
+        margin-bottom: 18px;
+        border-bottom: 3px solid rgba(59, 130, 246, 0.3);
+        padding-bottom: 12px;
+      }
+      section h3 {
+        font-size: 1.2rem;
+        color: #bfdbfe;
+        margin-bottom: 14px;
+      }
+      section p,
+      section li {
+        color: #cbd5e1;
+        font-size: 1rem;
+      }
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .card {
+        background: #15203b;
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        border-radius: 18px;
+        padding: 22px;
+      }
+      .card h4 {
+        color: #bfdbfe;
+        margin-bottom: 12px;
+      }
+      .card ul {
+        padding-left: 20px;
+        margin-top: 12px;
+        list-style: disc;
+      }
+      .card li {
+        margin-bottom: 10px;
+      }
+      .note-list {
+        padding-left: 20px;
+        margin-top: 20px;
+      }
+      .note-list li {
+        margin-bottom: 12px;
+      }
+      footer {
+        text-align: center;
+        padding: 22px 0;
+        color: #94a3b8;
+      }
+      .link-back {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 10px 16px;
+        background: rgba(59, 130, 246, 0.18);
+        border-radius: 12px;
+        border: 1px solid rgba(59, 130, 246, 0.28);
+      }
+      @media (max-width: 860px) {
+        .card-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Deep Dive into UI | Hiểu sâu về UI</h1>
+        <p>
+          Explore user interface design at a deeper level with practical
+          guidance, concepts, tips, and learning resources. | Khám phá thiết kế
+          giao diện người dùng ở mức độ sâu hơn với hướng dẫn thực tế, khái
+          niệm, mẹo và tài nguyên học tập.
+        </p>
+        <a class="link-back" href="uiux-main.html"
+          >← Back to UI/UX Main | Quay lại trang chính</a
+        >
+      </header>
+
+      <section>
+        <h2>What is UI? | UI là gì?</h2>
+        <p>
+          UI is the design of visual and interactive elements within a product.
+          It shapes the look and feel of screens, defines how controls behave,
+          and supports the user's journey through layout, color, typography, and
+          motion.
+        </p>
+        <p>
+          UI là thiết kế các yếu tố thị giác và tương tác trong sản phẩm. Nó
+          định hình cách các màn hình trông như thế nào, cách điều khiển hoạt
+          động, và hỗ trợ hành trình người dùng qua bố cục, màu sắc, chữ, và
+          chuyển động.
+        </p>
+      </section>
+
+      <section>
+        <h2>What does good UI require? | UI tốt cần những gì?</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h4>Visual clarity | Rõ ràng về thị giác</h4>
+            <ul>
+              <li>
+                Use hierarchy to guide attention | Dùng thứ tự hiển thị để hướng
+                sự chú ý
+              </li>
+              <li>Choose readable typography | Chọn chữ dễ đọc</li>
+              <li>
+                Create contrast for important elements | Tạo độ tương phản cho
+                yếu tố quan trọng
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Interaction design | Thiết kế tương tác</h4>
+            <ul>
+              <li>Make actions obvious | Làm cho hành động rõ ràng</li>
+              <li>
+                Provide feedback for taps and clicks | Cung cấp phản hồi sau
+                thao tác
+              </li>
+              <li>Use consistent patterns | Dùng mẫu nhất quán</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Visual system | Hệ thống thị giác</h4>
+            <ul>
+              <li>
+                Define spacing and grid rules | Xác định quy tắc spacing và grid
+              </li>
+              <li>Build reusable components | Xây component tái sử dụng</li>
+              <li>
+                Maintain color and icon consistency | Duy trì màu sắc và icon
+                đồng bộ
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Accessibility | Khả năng tiếp cận</h4>
+            <ul>
+              <li>Ensure text contrast | Đảm bảo độ tương phản chữ</li>
+              <li>
+                Support keyboard and screen readers | Hỗ trợ bàn phím và screen
+                reader
+              </li>
+              <li>
+                Design clear focus states | Thiết kế trạng thái focus rõ ràng
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Learning path for UI | Lộ trình học UI</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h4>Start with fundamentals | Bắt đầu với nền tảng</h4>
+            <ul>
+              <li>
+                Learn color theory and typography | Học lý thuyết màu sắc và
+                typography
+              </li>
+              <li>Study layout and alignment | Học bố cục và căn chỉnh</li>
+              <li>Understand visual balance | Hiểu cân bằng thị giác</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4>Practice with tools | Thực hành với công cụ</h4>
+            <ul>
+              <li>Use Figma or Adobe XD | Dùng Figma hoặc Adobe XD</li>
+              <li>Build components and layouts | Xây component và bố cục</li>
+              <li>Create prototypes | Tạo prototype</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Tips and notes for UI | Mẹo và lưu ý UI</h2>
+        <ul class="note-list">
+          <li>
+            Start with a strong grid system. | Bắt đầu với hệ lưới rõ ràng.
+          </li>
+          <li>
+            Use a limited color palette for consistency. | Dùng bảng màu hạn chế
+            để đồng bộ.
+          </li>
+          <li>
+            Test your interface on real devices. | Kiểm thử giao diện trên thiết
+            bị thật.
+          </li>
+          <li>Document your design decisions. | Ghi lại lý do thiết kế.</li>
+          <li>
+            Learn from existing products and patterns. | Học từ sản phẩm và mẫu
+            hiện có.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Practices and exercises | Thực hành</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h4>Redesign a simple screen | Thiết kế lại màn hình cơ bản</h4>
+            <p>
+              Choose a login page, dashboard, or product card and improve its
+              layout, spacing, and readability.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Create a design system | Xây hệ thống thiết kế</h4>
+            <p>
+              Build color tokens, typography scales, buttons, and form elements
+              that can be reused.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Practice dark theme | Tập theme tối</h4>
+            <p>
+              Convert a light interface to dark mode and maintain contrast and
+              clarity.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Review UI in detail | Đánh giá UI kỹ</h4>
+            <p>
+              Inspect margins, alignments, hover states, and spacing in each
+              component.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p><a href="uiux-main.html">Back to Main | Quay lại trang chính</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
