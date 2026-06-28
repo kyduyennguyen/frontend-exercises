@@ -18,3 +18,7 @@
 .blue-box {
   background-color: blue;
 }
+
+a:visited {
+  color: brown;
+}
