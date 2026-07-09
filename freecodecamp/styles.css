@@ -22,3 +22,15 @@
 a:visited {
   color: brown;
 }
+
+a:hover {
+  color: red;
+}
+
+a:focus {
+  color: green;
+}
+
+a:active {
+  color: black;
+}
