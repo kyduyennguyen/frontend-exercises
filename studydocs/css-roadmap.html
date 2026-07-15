@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Roadmap: Zero to Hero</title>
+    <style>
+      /* ==========================================
+           1. CSS VARIABLES (Biến CSS - Bước 4 trong lộ trình)
+           ========================================== */
+      :root {
+        --primary-blue: #29b6f6;
+        --dark-blue: #0288d1;
+        --bg-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        --card-bg: rgba(255, 255, 255, 0.95);
+        --text-dark: #2c3e50;
+        --text-muted: #7f8c8d;
+        --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      /* ==========================================
+           2. BOX MODEL & TYPOGRAPHY (Bước 1)
+           ========================================== */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg-gradient);
+        color: var(--text-dark);
+        margin: 0;
+        padding: 40px 20px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      /* Header với hiệu ứng Text Gradient */
+      header {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #ffffff;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: linear-gradient(to right, #00f2fe, #4facfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+      }
+
+      header p {
+        font-size: 1.1rem;
+        opacity: 0.8;
+        margin-top: 10px;
+      }
+
+      /* ==========================================
+           3. CSS GRID LAYOUT (Bước 3)
+           ========================================== */
+      .roadmap-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      /* ==========================================
+           4. CARD DESIGN & EFFECTS (Bước 1 & 5)
+           ========================================== */
+      .card {
+        background: var(--card-bg);
+        border-radius: 16px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        transition: var(--transition-smooth);
+        display: flex;
+        flex-direction: column;
+        border-top: 6px solid var(--primary-blue);
+      }
+
+      /* Hiệu ứng Hover phóng to và đổ bóng nhẹ nhàng */
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 242, 254, 0.2);
+      }
+
+      /* Số thứ tự trang trí phía sau */
+      .card-number {
+        position: absolute;
+        right: -10px;
+        top: -15px;
+        font-size: 6rem;
+        font-weight: 900;
+        color: rgba(41, 182, 246, 0.08);
+        user-select: none;
+      }
+
+      .card-tag {
+        align-self: flex-start;
+        background: rgba(41, 182, 246, 0.15);
+        color: var(--dark-blue);
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      .card h2 {
+        font-size: 1.4rem;
+        margin: 0 0 15px 0;
+        color: #1a252f;
+      }
+
+      /* ==========================================
+           5. LISTS & ICONS
+           ========================================== */
+      .milestones {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        flex-grow: 1;
+      }
+
+      .milestones li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        color: #555;
+      }
+
+      .milestones li::before {
+        content: "✦";
+        position: absolute;
+        left: 0;
+        color: var(--primary-blue);
+        font-weight: bold;
+      }
+
+      .card-footer {
+        font-size: 0.85rem;
+        font-style: italic;
+        color: var(--text-muted);
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        padding-top: 15px;
+        margin-top: auto;
+      }
+
+      .notes {
+        color: #ffffff;
+      }
+
+      /* ==========================================
+           6. RESPONSIVE DESIGN (Bước 4)
+           ========================================== */
+      @media (max-width: 768px) {
+        body {
+          padding: 20px 10px;
+        }
+        header h1 {
+          font-size: 2.2rem;
+        }
+        .roadmap-grid {
+          grid-template-columns: 1fr; /* Chuyển sang 1 cột trên màn hình nhỏ */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>CSS Roadmap</h1>
+        <p>Hành trình làm chủ nghệ thuật định dạng và bố cục giao diện web</p>
+      </header>
+
+      <div class="roadmap-grid">
+        <div class="card">
+          <div class="card-number">01</div>
+          <span class="card-tag">Nền tảng</span>
+          <h2>1. Nhập Môn & Box Model</h2>
+          <ul class="milestones">
+            <li>Cách liên kết CSS (Inline, Internal, External).</li>
+            <li>
+              Bộ chọn cơ bản (Selectors): Class, ID, Tag, và Độ ưu tiên
+              (Specificity).
+            </li>
+            <li>Màu sắc (RGB, HEX, HSL) và Thuộc tính Font/Text.</li>
+            <li>
+              <b>Cốt lõi:</b> Hiểu sâu về Box Model (Margin, Border, Padding,
+              Content Width/Height).
+            </li>
+          </ul>
+          <div class="card-footer">
+            Mục tiêu: Biết cách căn chỉnh khoảng cách và tô màu chuẩn xác cho
+            một phần tử.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-number">02</div>
+          <span class="card-tag">Định hình</span>
+          <h2>2. Định vị & Bố cục Cơ bản</h2>
+          <ul class="milestones">
+            <li>
+              Thuộc tính <code>display</code> (Block, Inline, Inline-block,
+              None).
+            </li>
+            <li>
+              Hệ thống định vị <code>position</code> (Static, Relative,
+              Absolute, Fixed, Sticky).
+            </li>
+            <li>Quản lý các lớp đè lên nhau với <code>z-index</code>.</li>
+            <li>
+              Ẩn/hiện phần tử đúng cách (<code>opacity</code> vs
+              <code>visibility</code> vs <code>display</code>).
+            </li>
+          </ul>
+          <div class="card-footer">
+            Mục tiêu: Đóng băng được thanh Header khi cuộn trang, tự tay làm các
+            menu dropdown đơn giản.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-number">03</div>
+          <span class="card-tag">Làm chủ</span>
+          <h2>3. Modern Layouts</h2>
+          <ul class="milestones">
+            <li>
+              <b>Flexbox:</b> Trục chính/phụ, căn dọc/ngang
+              (<code>justify-content</code>, <code>align-items</code>), chia tỷ
+              lệ co giãn (<code>flex-grow/shrink</code>).
+            </li>
+            <li>
+              <b>CSS Grid:</b> Chia cột/hàng trực quan, định nghĩa vùng
+              (<code>grid-template-areas</code>), căn chỉnh khoảng cách bằng
+              <code>gap</code>.
+            </li>
+          </ul>
+          <div class="card-footer">
+            Mục tiêu: Dựng bất kỳ bố cục phức tạp nào mà không cần dùng đến
+            "float" hay "table".
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-number">04</div>
+          <span class="card-tag">Thích ứng</span>
+          <h2>4. Responsive & Biến</h2>
+          <ul class="milestones">
+            <li>
+              Truy vấn thiết bị (<code>@media queries</code>) để thay đổi giao
+              diện theo kích thước màn hình.
+            </li>
+            <li>
+              Đơn vị đo lường linh hoạt: % , <code>vh</code>, <code>vw</code>,
+              và đặc biệt là bộ đôi <code>em</code>/<code>rem</code> cho font
+              chữ.
+            </li>
+            <li>
+              Sử dụng Biến CSS (Custom Properties) để quản lý mã màu/font hệ
+              thống đồng bộ.
+            </li>
+          </ul>
+          <div class="card-footer">
+            Mục tiêu: Trang web hiển thị hoàn hảo trên cả điện thoại, máy tính
+            bảng và màn hình lớn.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-number">05</div>
+          <span class="card-tag">Đỉnh cao</span>
+          <h2>5. Hiệu ứng & Kiến trúc</h2>
+          <ul class="milestones">
+            <li>
+              Tạo tương tác mượt mà với <code>transition</code> và các dạng
+              chuyển đổi hình học <code>transform</code> (2D/3D).
+            </li>
+            <li>
+              Tự định nghĩa hoạt ảnh vô hạn bằng <code>@keyframes</code> và
+              <code>animation</code>.
+            </li>
+            <li>
+              Tìm hiểu kiến trúc viết CSS sạch (BEM, SMACSS) hoặc cách tích hợp
+              các CSS Preprocessors (SASS/SCSS).
+            </li>
+          </ul>
+          <div class="card-footer">
+            🚀 Đạt thành tựu: Sẵn sàng chinh phục các CSS Framework như
+            Tailwind, Bootstrap hoặc CSS-in-JS (Styled Components).
+          </div>
+        </div>
+      </div>
+      <div class="notes">
+        <h2>Các cột mốc thực hành tương ứng để "lên trình":</h2>
+        <ol>
+          <li>
+            <strong>Sau khi học xong Bước 1 & 2:</strong> Hãy thử code lại giao
+            diện của một Thẻ sản phẩm (Product Card) hoặc một Trang Profile cá
+            nhân tĩnh gọn gàng.
+          </li>
+          <li>
+            <strong>Sau khi học xong Bước 3:</strong> Thử clone (sao chép) lại
+            bố cục phần header, sidebar và danh sách bài viết của các trang báo
+            điện tử lớn.
+          </li>
+          <li>
+            <strong>Sau khi hoàn thành cả lộ trình:</strong> Tự làm một trang
+            Portfolio cá nhân có hiệu ứng chuyển động bắt mắt khi rê chuột và
+            tương thích tốt trên cả Mobile lẫn Desktop.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

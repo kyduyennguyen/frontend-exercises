@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Roadmap: Zero to Hero</title>
+    <style>
+      :root {
+        --primary-color: #e34c26;
+        --secondary-color: #f06529;
+        --bg-color: #f4f7f6;
+        --text-color: #333;
+        --card-bg: #fff;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        padding: 40px 0;
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      header p {
+        margin: 10px 0 0;
+        opacity: 0.9;
+      }
+
+      .roadmap {
+        position: relative;
+        padding: 10px 0;
+      }
+
+      /* Thanh dọc nối các bước */
+      .roadmap::before {
+        content: "";
+        position: absolute;
+        left: 25px;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: #ccc;
+        border-radius: 2px;
+      }
+
+      .step {
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 60px;
+      }
+
+      /* Icon số bước */
+      .step-number {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(227, 76, 38, 0.3);
+        z-index: 1;
+      }
+
+      .step-content {
+        background: var(--card-bg);
+        padding: 20px 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border-left: 5px solid var(--secondary-color);
+      }
+
+      .step-content h2 {
+        margin-top: 0;
+        color: var(--primary-color);
+      }
+
+      .milestone-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .milestone-list li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .milestone-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #2ecc71;
+        font-weight: bold;
+      }
+
+      .badge {
+        background-color: #e1f5fe;
+        color: #0288d1;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>HTML Roadmap</h1>
+        <p>Hành trình từ Người mới bắt đầu (Zero) đến Chuyên gia (Hero)</p>
+      </header>
+
+      <div class="roadmap">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h2>Khởi Đầu Khởi Sắc (Nhập Môn)</h2>
+            <p>
+              Hiểu về cách trình duyệt hoạt động và cấu trúc cơ bản nhất của một
+              trang web.
+            </p>
+            <ul class="milestone-list">
+              <li>
+                Internet & Cách trình duyệt (Browser) render một file HTML.
+              </li>
+              <li>
+                Cấu trúc Boilerplate chuẩn: <code>&lt;!DOCTYPE html&gt;</code>,
+                <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+                <code>&lt;body&gt;</code>.
+              </li>
+              <li>
+                Các thẻ văn bản cơ bản: Tiêu đề
+                (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>), Đoạn văn
+                (<code>&lt;p&gt;</code>).
+              </li>
+              <li>Làm việc với Attributes (Thuộc tính thẻ) cơ bản.</li>
+            </ul>
+            <span class="badge"
+              >Mục tiêu: Tạo được file .html đầu tiên hiển thị text sạch.</span
+            >
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h2>Xây Dựng Khung Xương (Thẻ Phổ Biến)</h2>
+            <p>
+              Học cách đưa các định dạng nội dung phong phú hơn vào trang web.
+            </p>
+            <ul class="milestone-list">
+              <li>
+                Liên kết trang (Thẻ Anchor <code>&lt;a&gt;</code>) và chèn hình
+                ảnh (<code>&lt;img&gt;</code>).
+              </li>
+              <li>
+                Danh sách: Ordered List (<code>&lt;ol&gt;</code>) và Unordered
+                List (<code>&lt;ul&gt;</code>).
+              </li>
+              <li>
+                Bảng dữ liệu (<code>&lt;table&gt;</code>,
+                <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>,
+                <code>&lt;th&gt;</code>).
+              </li>
+              <li>
+                Thẻ khối vô hướng: Khối lớn (<code>&lt;div&gt;</code>) và Khối
+                nội dòng (<code>&lt;span&gt;</code>).
+              </li>
+            </ul>
+            <span class="badge"
+              >Mục tiêu: Tạo được một trang CV cá nhân bằng HTML thuần.</span
+            >
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h2>Tương Tác & Thu Thập Dữ Liệu (Forms)</h2>
+            <p>
+              Nơi người dùng có thể gửi dữ liệu, đăng ký, đăng nhập trên website
+              của bạn.
+            </p>
+            <ul class="milestone-list">
+              <li>
+                Thẻ bao bọc Form (<code>&lt;form&gt;</code>) và các thuộc tính
+                <code>action</code>, <code>method</code>.
+              </li>
+              <li>
+                Các loại dữ liệu đầu vào: <code>&lt;input&gt;</code> (text,
+                password, email, checkbox, radio).
+              </li>
+              <li>
+                Vùng văn bản lớn (<code>&lt;textarea&gt;</code>) và menu thả
+                xuống (<code>&lt;select&gt;</code>).
+              </li>
+              <li>
+                Nút bấm (<code>&lt;button type="submit"&gt;</code>) và nhãn điều
+                hướng (<code>&lt;label&gt;</code>).
+              </li>
+            </ul>
+            <span class="badge"
+              >Mục tiêu: Thiết kế hoàn chỉnh một form Đăng ký / Đăng nhập.</span
+            >
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h2>HTML5 Semantic (Tư Duy Hero)</h2>
+            <p>
+              Viết code "sạch" giúp Google Bot hiểu được bố cục website (Cực kỳ
+              quan trọng cho SEO).
+            </p>
+            <ul class="milestone-list">
+              <li>
+                Thay thế các khối div vô nghĩa bằng:
+                <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                <code>&lt;main&gt;</code>.
+              </li>
+              <li>
+                Phân tách nội dung bằng: <code>&lt;article&gt;</code>,
+                <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>.
+              </li>
+              <li>Chân trang: <code>&lt;footer&gt;</code>.</li>
+              <li>
+                Thẻ đa phương tiện hiện đại: <code>&lt;audio&gt;</code> và
+                <code>&lt;video&gt;</code>.
+              </li>
+            </ul>
+            <span class="badge"
+              >Mục tiêu: Dựng layout hoàn chỉnh của một trang báo điện tử.</span
+            >
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h2>Advanced HTML & Best Practices (Trở Thành Hero)</h2>
+            <p>
+              Làm chủ cấu hình nâng cao và chuẩn bị bước sang thế giới CSS/JS.
+            </p>
+            <ul class="milestone-list">
+              <li>
+                Tối ưu <code>&lt;head&gt;</code>: Thẻ Meta SEO, Open Graph (hiển
+                thị khi share link Facebook/Zalo).
+              </li>
+              <li>
+                Favicon, nhúng Google Fonts và liên kết file CSS/JS ngoại vi.
+              </li>
+              <li>
+                Hợp chuẩn Accessibility (ARIA attributes) cho người khiếm thị.
+              </li>
+              <li>
+                Sử dụng các công cụ Validator của W3C để check lỗi chuẩn hóa
+                code.
+              </li>
+            </ul>
+            <span class="badge"
+              >🚀 Đạt thành tựu: Sẵn sàng kết hợp CSS Grid/Flexbox để làm giao
+              diện đẹp!</span
+            >
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Notes:</h2>
+        <ol>
+          <li>
+            <strong>Đừng học vẹt:</strong> Khi học đến thẻ nào, hãy tự gõ lại
+            thay vì copy-paste.
+          </li>
+          <li>
+            <strong>Học kèm CSS cơ bản:</strong> HTML chỉ là bộ khung xương (xấu
+            xí và thô ráp). Ngay khi kết thúc <b>Bước 2</b>, bạn nên học thêm
+            một chút CSS (màu sắc, kích thước) để tăng cảm hứng thực hành.
+          </li>
+          <li>
+            <strong>Inspect Element:</strong> Hãy tập thói quen nhấn
+            <i>F12</i> trên các website lớn để xem cách họ tổ chức các thẻ HTML.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
