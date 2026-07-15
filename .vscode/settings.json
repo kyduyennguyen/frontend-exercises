@@ -13,5 +13,8 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "html.autoCreateQuotes": true,
+  "html.format.preserveNewLines": true,
+  "prettier.bracketSpacing": false
 }
