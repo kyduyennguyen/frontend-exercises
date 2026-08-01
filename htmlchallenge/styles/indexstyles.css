@@ -1,0 +1,141 @@
+body {
+  background-color: #e8ecef;
+  color: #1c2b48;
+}
+
+#header-page h1 {
+  width: 100%;
+  background-color: #b2cddf;
+}
+
+.title-header {
+  text-align: center;
+}
+
+.title-section {
+  width: 100%;
+  background-color: #a7c7e7;
+  text-align: center;
+}
+
+.box-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.title-explain,
+.title-example {
+  font-size: 20px;
+  font-weight: bold;
+  color: #596070;
+  letter-spacing: 2px;
+}
+
+.box-explain {
+  width: 100%;
+  background-color: #e6f1fa;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+.box-example {
+  width: 100%;
+  background-color: #c9deef;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+code {
+  background-color: #c9d9e6;
+}
+
+/* Tables element section*/
+#tables-element code {
+  background-color: unset;
+}
+
+#tables-element table {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+
+#tables-element th {
+  background-color: #cbe4f0;
+  border: 1px solid #1c2b48;
+}
+
+#tables-element tr,
+#tables-element td {
+  background-color: #f2fafa;
+  border: 1px solid #1c2b48;
+}
+
+/* Forms element section*/
+#forms-element form {
+  width: 200px;
+  height: 130px;
+  background-color: #ecf9ff;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+#forms-element label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+#forms-element input {
+  width: 150px;
+  height: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+#forms-element button {
+  width: 100px;
+  height: 30px;
+  margin-left: 20px;
+  color: #e6f1fa;
+  background-color: #1c2b48;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#forms-element button:hover {
+  color: #1c2b48;
+  background-color: #b2cddf;
+  cursor: pointer;
+  font-weight: unset;
+}
+
+/* Footer section */
+#attribution {
+  font-size: 12px;
+  text-align: center;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  letter-spacing: 2px;
+  color: #757f99;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+#attribution a {
+  color: #596070;
+  text-decoration: none;
+}
+
+#attribution a:hover {
+  color: #b2cddf;
+}

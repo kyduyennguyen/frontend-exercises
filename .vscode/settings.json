@@ -6,7 +6,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -16,5 +16,6 @@
   },
   "html.autoCreateQuotes": true,
   "html.format.preserveNewLines": true,
-  "prettier.bracketSpacing": false
+  "prettier.bracketSpacing": false,
+  "liveServer.settings.port": 5501
 }
