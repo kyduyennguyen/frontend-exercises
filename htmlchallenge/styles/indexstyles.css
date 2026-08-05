@@ -1,21 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #e8ecef;
   color: #1c2b48;
 }
 
+hr {
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
 #header-page h1 {
   width: 100%;
   background-color: #b2cddf;
+  margin: 10px 0;
 }
 
 .title-header {
   text-align: center;
+  margin: 10px 0;
 }
 
 .title-section {
   width: 100%;
   background-color: #a7c7e7;
   text-align: center;
+  margin: 20px 0;
 }
 
 .box-section {
@@ -30,6 +47,7 @@ body {
   font-weight: bold;
   color: #596070;
   letter-spacing: 2px;
+  margin: 20px 0;
 }
 
 .box-explain {
@@ -77,6 +95,11 @@ code {
 }
 
 /* Forms element section*/
+#forms-element .box-section h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
 #forms-element form {
   width: 200px;
   height: 130px;
@@ -116,6 +139,77 @@ code {
   font-weight: unset;
 }
 
+/* Input Types, Form Accessibility, Input Attributes sections*/
+#input-types .box-section h2,
+#form-accessibility .box-section h2,
+#input-attributes .box-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#input-types form {
+  width: 250px;
+  height: 400px;
+  background-color: #ecf9ff;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+#input-types label,
+#form-accessibility label,
+#input-attributes label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#input-types input,
+#form-accessibility input,
+#input-attributes input {
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+#input-types button,
+#form-accessibility button {
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  color: #e6f1fa;
+  background-color: #1c2b48;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#input-types button:hover,
+#form-accessibility button:hover {
+  color: #1c2b48;
+  background-color: #b2cddf;
+  cursor: pointer;
+  font-weight: unset;
+}
+
+#form-accessibility form {
+  width: 250px;
+  height: 210px;
+  background-color: #ecf9ff;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+#input-attributes form {
+  width: 250px;
+  height: 280px;
+  background-color: #ecf9ff;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
 /* Footer section */
 #attribution {
   font-size: 12px;
@@ -128,8 +222,6 @@ code {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-
 
 #attribution a {
   color: #596070;

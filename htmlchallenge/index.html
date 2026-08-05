@@ -282,10 +282,10 @@
               <h4>Best Practices</h4>
               <p><ins>Always use labels</ins> - Associate every input with a &lt;label&gt;</p>
               <dl><ins>Choose correct method:</ins></dl>
-              <dt><mark>GET</mark></dt>
-              <dd>Read or Search requests</dd>
-              <dt><mark>POST</mark></dt>
-              <dd>Submit sensitive or larger data</dd>
+              <dt style="margin-left: 10px;"><mark>GET</mark></dt>
+              <dd style="margin-left: 20px;">Read or Search requests</dd>
+              <dt style="margin-left: 10px;"><mark>POST</mark></dt>
+              <dd style="margin-left: 20px;">Submit sensitive or larger data</dd>
               <p><ins>Keep forms accessible</ins> - Use meaningful labels and logical structure.</p>
               <p><ins>Keep forms simple</ins> - Ask only for necessary information.</p>
             </div>
@@ -333,17 +333,101 @@
             <div>
               <h2>Contact Form</h2>
               <form action="/submit" method="post">
-                <label for="fullname">Full Name</label>
+                <label for="fullname">Full Name</label><br>
                 <input type="text" name="fullname" placeholder="Enter your full name"><br>
-                <label for="email">Email</label>
+                <label for="email">Email</label><br>
                 <input type="email" name="email" placeholder="Enter your email"><br>
-                <label for="password">Password</label>
+                <label for="password">Password</label><br>
                 <input type="password" name="password" placeholder="Enter your password"><br>
-                <label for="age">Age</label>
+                <label for="age">Age</label><br>
                 <input type="number" name="age" placeholder="Enter your age"><br>
-                <label for="dob">Date of Birth</label>
+                <label for="dob">Date of Birth</label><br>
                 <input type="date" name="dob"><br>
                 <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Day 15: Labels, Placeholders & Form Accessibility -->
+      <section id="form-accessibility">
+        <h2 class="title-section">Day 15 - Labels, Placeholders & Form Accessibility</h2>
+        <div class="box-section">
+          <div class="box-explain">
+            <p class="title-explain">-------------Labels, Placeholders & Form Accessibility-------------</p>
+            <div>
+              <p><b>label</b> - Describe the purpose of an input field and improve accessibility for screen readers.
+                Every form field should have a label.<br><u>Always visible and identifies the input.</u></p>
+              <p><b>placeholder</b> - Provides a temporary hint inside the field. Use placeholders carefully, provide
+                examples not instructions.</p>
+              <p><strong>Build accessible forms</strong> - Design forms everyone can use.</p>
+            </div>
+          </div>
+          <div class="box-example">
+            <p class="title-example">-------------Labels, Placeholders & Form Accessibility Example-------------</p>
+            <div>
+              <h2>Contact Form</h2>
+              <form action="/submit" method="post">
+                <label for="fullname">Full Name</label><br>
+                <input id="fullname" type="text" placeholder="Angelly Nguyen"><br>
+                <label for="email">Email</label><br>
+                <input id="email" type="email" placeholder="angelly@example.com"><br>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Day 16: Input Attributes -->
+      <section id="input-attributes">
+        <h2 class="title-section">Day 16 - Input Attributes</h2>
+        <div class="box-section">
+          <div class="box-explain">
+            <p class="title-explain">----------------------Input Attributes----------------------</p>
+            <div>
+              <p><b>required</b> - The field must be filled before submitting the form. (Mandatory field)</p>
+              <p><b>readonly</b> - Users can view the value but cannot edit it. (Cannot edit)</p>
+              <p><b>disabled</b> - The field is unavailable and is not submitted with the form. (Inactive field)</p>
+              <p><b>maxlength</b> - Limits the maximum number of characters. (Limits text length)</p>
+              <p><b>placeholder</b> - Displays a temporary hint inside the input.</p>
+              <p><b>value</b> - Sets the default value of an input field.</p>
+              <hr>
+              <h4>Best Practices</h4>
+              <p>Use required carefully - only require information that is truly necessary.</p>
+              <p>Use readonly for fixed values - Display information without allowing edits.</p>
+              <p>Use disabled for inactive fields - Prevent interaction with unavaliable inputs.</p>
+              <p>Keep forms simple - Use only the attributes needed for a better UX (user experience).</p>
+              <hr>
+              <code>
+                <p>
+                  &lt;h2&gt;Form Preview&lt;/h2&gt;<br>
+                  &lt;form&gt;<br>
+                  &lt;label for="fullname"&gt;Full Name (required)&lt;/label&gt;&lt;br&gt;<br>
+                  &lt;input id="fullname" type="text" placeholder="Enter your full name" <b>required</b>&gt;&lt;br&gt;<br>
+                  &lt;label for="email"&gt;Email (readonly)&lt;/label&gt;&lt;br&gt;<br>
+                  &lt;input id="email" type="email" value="angelly@example.com" <b>readonly</b>&gt;&lt;br&gt;<br>
+                  &lt;label for="username"&gt;Username (10 character limit)&lt;/label&gt;&lt;br&gt;<br>
+                  &lt;input id="username" type="text" <b>maxlength="10"</b>&gt;&lt;br&gt;<br>
+                  &lt;label&gt;Disabled input&lt;/label&gt;&lt;br&gt;<br>
+                  &lt;input type="text" placeholder="This field is disabled" <b>disabled</b>&gt;&lt;br&gt;<br>
+                  &lt;/form&gt;<br>
+                </p>
+              </code>
+            </div>
+          </div>
+          <div class="box-example">
+            <p class="title-example">----------------------Input Attributes Example----------------------</p>
+            <div id="form-preview">
+              <h2>Form Preview</h2>
+              <form>
+                <label for="fullname">Full Name (required)</label><br>
+                <input id="fullname" type="text" placeholder="Enter your full name" required><br>
+                <label for="email">Email (readonly)</label><br>
+                <input id="email" type="email" value="angelly@example.com" readonly><br>
+                <label for="username">Username (10 character limit)</label><br>
+                <input id="username" type="text" maxlength="10"><br>
+                <label>Disabled input</label><br>
+                <input type="text" placeholder="This field is disabled" disabled><br>
               </form>
             </div>
           </div>
