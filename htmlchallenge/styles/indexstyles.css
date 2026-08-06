@@ -158,7 +158,8 @@ code {
 
 #input-types label,
 #form-accessibility label,
-#input-attributes label {
+#input-attributes label,
+#button-element label {
   font-size: 15px;
   font-weight: bold;
 }
@@ -185,7 +186,8 @@ code {
 }
 
 #input-types button:hover,
-#form-accessibility button:hover {
+#form-accessibility button:hover,
+#button-element button:hover {
   color: #1c2b48;
   background-color: #b2cddf;
   cursor: pointer;
@@ -208,6 +210,56 @@ code {
   border-radius: 10px;
   padding-top: 20px;
   padding-left: 25px;
+}
+
+/* Button element section */
+#simple-contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button-element h4,
+#checkboxes-radio-buttons h4 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#button-element li,
+#checkboxes-radio-buttons li {
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+#button-element form {
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+}
+
+#button-element input {
+  width: 200px;
+  height: 30px;
+  margin: 5px 0;
+}
+
+#btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+#button-element button {
+  width: 60px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #1c2b48;
+  color: #e6f1fa;
+  background-color: #1c2b48;
 }
 
 /* Footer section */

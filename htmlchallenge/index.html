@@ -433,6 +433,93 @@
           </div>
         </div>
       </section>
+      <!-- Day 17: Button Element -->
+      <section id="button-element">
+        <h2 class="title-section">Day 17 - Button Element</h2>
+        <div class="box-section">
+          <div class="box-explain">
+            <p class="title-explain">----------------------Button Element----------------------</p>
+            <div>
+              <p>
+                button tag - Defines a clickable button. Buttons perform actions when users click them.
+              </p>
+              <p>Commonly used in forms and interactive elements webpages.</p>
+              <p>HTML provides different types for different purposes.</p>
+              <hr>
+              <h4>Button Types</h4>
+              <p>submit - Submits the form data to the server. (Sends form data)</p>
+              <p>reset - Restores all form controls to their initial values. (Restores form controls)</p>
+              <p>button - Performs custom actions when handled with JS. (Custom JS actions)</p>
+              <hr>
+              <h4>Best Practices</h4>
+              <ul>
+                <li>Always set button type.</li>
+                <li>Use clear button text.</li>
+                <li>Accessible buttons: Use meaningful text instead of generic labels like "Click".</li>
+                <li>Keep actions obvious: users should immediately understand what the button does.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-example">
+            <p class="title-example">----------------------Button Element Example----------------------</p>
+            <div id="simple-contact-form">
+              <h2>Simple Contact Form</h2>
+              <form action="/submit" method="post">
+                <label for="name">Name</label><br>
+                <input id="name" type="text"><br>
+                <div id="btn-group">
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+                  <button type="button">Help</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Day 18: Checkboxes & Radio Buttons -->
+      <section id="checkboxes-radio-buttons">
+        <h2 class="title-section">Day 18 - Checkboxes & Radio Buttons</h2>
+        <div class="box-section">
+          <div class="box-explain">
+            <p class="title-explain">----------------------Button Element----------------------</p>
+            <div>
+              <p>Checkboxes allow selecting multiple options: skills, hobbies, interests,..</p>
+              <p>Radio buttons allow selecting only one option: gender, payment method, delivery option,...</p>
+              <p>Both are commonly used in HTML5 forms.</p>
+              <p>Use labels for better accessibility.</p>
+              <hr>
+              <h4>Best Practices</h4>
+              <ul>
+                <li>Always use labels: associate every option with a &lt;label&gt;</li>
+                <li>Group radio buttons: use the same name attribute for related radio buttons.</li>
+                <li>Clear option names: use meaningful labels users can easily understand.</li>
+                <li>Accessible forms: ensure options are keyboard and screen-reader friendly.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-example">
+            <p class="title-example">----------------------Button Element Example----------------------</p>
+            <div>
+              <h3>Select Your Skills</h3>
+              <input type="checkbox" id="html">
+              <label for="html">HTML</label><br>
+              <input type="checkbox" id="css">
+              <label for="css">CSS</label><br>
+              <input type="checkbox" id="js">
+              <label for="js">JavaScript</label><br>
+              <hr>
+              <h3>Choose Gender</h3>
+              <input type="radio" id="male" name="gender">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender">
+              <label for="female">Female</label><br>
+              <input type="radio" id="other" name="gender">
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="attribution">©2026 Designed & Coded with ❤️ by <a href="https://github.com/kyduyennguyen">Angelly
         Nguyen</a>.</footer>
