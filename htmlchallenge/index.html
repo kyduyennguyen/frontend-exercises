@@ -569,7 +569,7 @@
         </div>
       </section>
       <!-- Day 20: Textarea Element -->
-      <section id="select-dropdowns">
+      <section id="textarea-element">
         <h2 class="title-section">Day 20 - Textarea element</h2>
         <div class="box-section">
           <div class="box-explain">
@@ -599,6 +599,171 @@
           <div class="box-example">
             <p class="title-example">----------------------Textarea Element Example----------------------</p>
             <div>
+              <h3>Contact Form</h3>
+              <form>
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <button>Send Message <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="16px" fill="#f2fafa">
+                    <path
+                      d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
+                  </svg></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Day 21 & 22: Div and Semantic elements -->
+      <section id="div-semantic">
+        <h2 class="title-section">Day 21 & 22 - Div tag and Semantic Elements</h2>
+        <div class="box-section">
+          <div class="box-explain">
+            <p class="title-explain">-------------------Div & Semantic Elements-------------------</p>
+            <div>
+              <h4>Semantic Elements</h4>
+              <p>It describe the purpose of content. They improve readability and maitainability.</p>
+              <p>Search engines understand semantic pages better.</p>
+              <p>They enhance accessibility for assistive technoligies.</p>
+              <hr width="100px">
+              <p><strong>header</strong> - top section containing logo and page heading.</p>
+              <p><strong>nav</strong> - navigation links and menus.</p>
+              <p><strong>main</strong> - main content of the webpage.</p>
+              <p><strong>section</strong> - groups related content together.</p>
+              <p><strong>article</strong> - independent content like blog posts or news article.</p>
+              <p><strong>footer</strong> - footer information such as copyright and contact details.</p>
+              <hr width="100px">
+              <h4>Why use Semantic HTML?</h4>
+              <ul>
+                <li>Better SEO: search engines understand page structure.</li>
+                <li>Accessibility: screen readers navigate pages more effectively.</li>
+                <li>Cleaner code: make HTML easier to read and maintain.</li>
+                <li>Modern standard: recommended for all modern websites.</li>
+              </ul>
+              <hr width="100px">
+              <h4>&lt;div&gt; Tag</h4>
+              <p>div is generic container with no semantic meaning.</p>
+              <p>Use <strong>&lt;div&gt;</strong> only when no semantic element fits.</p>
+              <p>But if use only <strong>&lt;div&gt;</strong> for full page - structure is unclear and hard to
+                understand.</p>
+              <hr width="100px">
+              <h4>When should you use div tag?</h4>
+              <ul>
+                <li>Grouping Elements: use div when you only need a container.</li>
+                <li>Styling Layouts: useful for CSS layouts and components.</li>
+                <li>Use Semantic First: prefer semantic elements whenever they match the content.</li>
+                <li>Modern HTML5: semantic HTML is the recommended approach for modern websites.</li>
+              </ul>
+              <hr width="100px">
+              <h4>Comparison</h4>
+              <p><Strong>&lt;div&gt;</Strong></p>
+              <ul>
+                <li>Generic container</li>
+                <li>No meaning</li>
+                <li>Mainly used for layout and styling</li>
+                <li>Frequently combined with CSS</li>
+              </ul>
+              <p><Strong>Semantic Elements</Strong></p>
+              <ul>
+                <li>Describes content purpose</li>
+                <li>Better SEO</li>
+                <li>Better accessibility</li>
+                <li>Easier to understand</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-example">
+            <p class="title-example">------------------Div & Semantic Elements Example-------------------</p>
+            <div>
+              <!-- Semantic Elements example -->
+              <section id="example-semantic-element">
+                <h4>SEMANTIC ELEMENTS</h4>
+                <div id="semantic-frame">
+                  <header id="my-blog-header">
+                    <h1>My Blog (header)</h1>
+                  </header>
+                  <nav id="nav-blog">
+                    <p>(nav)</p>
+                    <a href="#">Home</a>
+                    <a href="#">Article</a>
+                  </nav>
+                  <main id="main-blog">
+                    <p>main content area</p>
+                    <div>
+                      <section id="section-blog">
+                        <p>(section)</p>
+                        <article id="article-blog">
+                          <h2>HTML5 Basics (article)</h2>
+                          <p>Learn semantic HTML</p>
+                        </article>
+                      </section>
+                      <aside id="aside-blog">
+                        <p>(aside) Related Links:</p>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                        </ul>
+                      </aside>
+                    </div>
+                  </main>
+                  <footer id="footer-blog">
+                    (footer) ©2026 Designed & Coded with ❤️ by Angelly
+                    Nguyen.
+                  </footer>
+                </div>
+              </section>
+              <hr width="150px">
+              <!-- Why don't using only div tag -->
+              <section id="example-div-tag">
+                <h4>USING ONLY &lt;div&gt;</h4>
+                <div id="only-div">
+                  <div>
+                    <p>&lt;div&gt;</p>
+                  </div>
+                  <div>
+                    <p>&lt;div&gt;</p>
+                  </div>
+                  <div>
+                    <p>&lt;div&gt;</p>
+                  </div>
+                  <div>
+                    <p>&lt;div&gt;</p>
+                  </div>
+                  <div>
+                    <p>&lt;div&gt;</p>
+                  </div>
+                  <div>
+                    <p>&lt;div&gt;</p>
+                  </div>
+                </div>
+                <hr width="150px">
+                <h4>USING SEMANTIC ELEMENTS</h4>
+                <div id="use-semantic">
+                  <header>
+                    <p>&lt;header&gt;</p>
+                  </header>
+                  <nav>
+                    <p>&lt;nav&gt;</p>
+                  </nav>
+                  <main>
+                    <p>&lt;main&gt;</p>
+                    <section>
+                      <p>&lt;section&gt;</p>
+                      <div>
+                        <article>
+                          <p>&lt;article&gt;</p>
+                        </article>
+                        <aside>
+                          <p>&lt;aside&gt;</p>
+                        </aside>
+                      </div>
+                    </section>
+                  </main>
+                  <footer>
+                    <p>&lt;footer&gt;</p>
+                  </footer>
+                </div>
+              </section>
             </div>
           </div>
         </div>
