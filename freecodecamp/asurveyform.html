@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action="">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required><br>
+      <label for="number" id="number-label">Age(optional)</label>
+      <input type="number" id="number" placeholder="Age" min="1" max="2">
+      <br>
+      <label for="dropdown">Which option best describes your current role?</label>
+      <br>
+      <select name="dropdown" id="dropdown">
+        <option value="select-current-role" disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-learner">Full Time Learner</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select><br>
+      <fieldset style="border: none;">
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <input id="definititely" type="radio" value="Definititely" name="recommend-option" checked>
+        <label for="definititely">Definititely</label>
+        <input id="maybe" type="radio" value="maybe" name="recommend-option">
+        <label for="maybe">Maybe</label>
+        <input id="not-sure" type="radio" value="Not sure" name="recommend-option">
+        <label for="not-sure">Not sure</label>
+      </fieldset>
+      <br>
+      <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+      <br>
+      <select name="dropdown" id="dropdown">
+        <option value="select-an-option" disabled selected>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+      </select>
+      <fieldset style="border: none;">
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <label><input type="checkbox" value="front-end-projects"> Front-end Projects</label><br>
+        <label><input type="checkbox" value="back-end-projects"> Back-end Projects</label><br>
+        <label><input type="checkbox" value="data-visualization"> Data Visualization</label><br>
+        <label><input type="checkbox" value="challenges"> Challenges</label><br>
+        <label><input type="checkbox" value="open-source-community"> Open Source Community</label><br>
+        <label><input type="checkbox" value="gitter-help-rooms"> Gitter help rooms</label><br>
+        <label><input type="checkbox" value="videos"> Videos</label><br>
+        <label><input type="checkbox" value="city-meetups"> City Meetups</label><br>
+        <label><input type="checkbox" value="wiki-forum"> Wiki Forum</label><br>
+        <label><input type="checkbox" value="additional-courses"> Additional Courses</label><br>
+      </fieldset>
+      <br>
+      <label for="comments">Any comments or suggestions?</label><br>
+      <textarea name="comments" id="comments" placeholder="Enter your comment here..." rows="2"></textarea><br>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
