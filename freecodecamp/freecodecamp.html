@@ -234,6 +234,24 @@
         <p>This is the about section of the page.</p>
       </section>
     </div>
+
+    <div class="search-container" role="search">
+      <label for="searchbox" class="visually-hidden">Search</label>
+
+      <div id="searchbox" class="searchbox" role="searchbox" aria-label="Search the site" tabindex="0"
+        contenteditable="true">
+      </div>
+
+      <button type="button" aria-label="Submit search">Search</button>
+    </div>
+
+    <!-- Accessible -->
+    <form>
+      <label for="password">Password:</label>
+      <input type="password" id="password" aria-describedby="password-help" />
+      <p id="password-help">Your password must be at least 8 characters long.</p>
+    </form>
+
     <!-- Script Elements -->
     <script>
       //alert("Welcome to FreeCodeCamp!");
