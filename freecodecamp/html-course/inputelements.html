@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>HTML Input Types</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Input Types</h1>
+    </header>
+    <main id="main-input">
+      <form>
+        <h2>Live UI Preview</h2>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" placeholder="Angelly Nguyen" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="angelly@gmail.com" inputmode="email"><br>
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" min="1" max="100" value="30" inputmode="numeric"><br>
+        <label for="phonenumber">Phone Number:</label><br>
+        <input type="tel" id="phonenumber" maxlength="10" placeholder="0912-345-678" inputmode="tel"><br>
+        <input type="button" id="button-input" value="Button"><br>
+        <input type="file" id="upload-file" multiple><br>
+        <fieldset id="label-color">
+          <legend>Choose color you want:</legend>
+          <input type="color" id="choose-color" value="#3368A0">
+          <span id="colorHex">#3368A0</span>
+        </fieldset>
+        <input type="range" name="range" id="range" value="50" min="0" max="100"> <br>
+        <input type="submit" id="btn-submit" value="Submit">
+        <input type="reset" id="btn-reset" value="Reset" style="background-color: #7CD5C7;"><br>
+        <input type="date" id="date-input" value="21-08-2026" min="01-01-2000"><br>
+        <input type="time" id="time-input" value="22:00" min="00:00" max="23:59"><br>
+        <label for="choose-agree" id="label-agree"><input type="checkbox" id="choose-agree"> I agree to the terms &
+          conditions</label><br>
+        <label for="male" id="label-gender"><input type="radio" name="gender" id="male">
+          Male</label>
+        <label for="male" id="label-gender"><input type="radio" name="gender" id="female">
+          Female</label>
+      </form>
+    </main>
+  </body>
+</html>

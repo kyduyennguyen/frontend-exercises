@@ -1,0 +1,151 @@
+#title {
+  color: blue;
+}
+
+#title-color {
+  color: green;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  color: red;
+}
+
+a:focus {
+  color: green;
+}
+
+a:active {
+  color: black;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.searchbox {
+  flex: 1;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  min-height: 1.5em;
+}
+
+.searchbox:focus {
+  border-color: #007acc;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.3);
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Hide visually but keep for screen readers */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Input Types page */
+#main-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3368A0;
+}
+
+#main-input form {
+  width: 400px;
+  height: 950px;
+  padding: 10px 70px;
+  background-color: #F2EFE7;
+}
+
+#main-input h2 {
+  text-align: center;
+  color: #66A3BF;
+  text-transform: uppercase;
+}
+
+#main-input label,
+#main-input input {
+  width: 350px;
+  height: 20px;
+  margin: 10px 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+#button-input,
+#btn-submit,
+#btn-reset {
+  height: 40px !important;
+  width: 200px !important;
+  border-radius: 20px;
+  background-color: #C8DFDB;
+  border: 1px solid #3368A0;
+  color: #3368A0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+#label-color {
+  border: 1px solid #66A3BF;
+  width: 330px;
+  margin: 5px 0;
+}
+
+#choose-color {
+  width: 250px !important;
+  border: none;
+}
+
+#choose-agree,
+#male,
+#female {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 10px !important;
+}
+
+#label-agree,
+#label-gender {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 5px;
+}
