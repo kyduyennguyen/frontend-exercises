@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #FFFAF3;
+  background-color: #0B0909;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header of wwebpage */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  height: 100px;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#title-header {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#title-header span {
+  color: #FFBF00;
+}
+
+#nav-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  list-style-type: none;
+  align-items: center;
+  justify-items: center;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #FFFAF3;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#nav-links a:hover {
+  color: #FFF78D;
+  cursor: pointer;
+}
+
+.btn-cta {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFBF00;
+  color: #0B0909;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.btn-cta:hover {
+  background-color: #0B0909;
+  color: #FFFAF3;
+  cursor: pointer;
+  border: 1px solid #FFBF00;
+}
+
+/* Hero Section */
+
+#title-container {
+  margin-right: 50px;
+  z-index: 2;
+}
+
+#title-container h1 {
+  font-family: "Fraunces", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+#title-container h1 span {
+  color: #FFBF00;
+  font-style: italic;
+  font-weight: unset;
+}
+
+#title-container p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+#btn-container button {
+  width: 150px;
+  height: 40px;
+  background-color: #0B0909;
+  color: #FFFAF3;
+  border: 1px solid #FFBF00;
+  border-radius: 10px;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#btn-container button:hover {
+  background-color: #FFBF00;
+  color: #0B0909;
+  cursor: pointer;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.hero-visual {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+#img-beefsteak {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 10%;
+  background: linear-gradient(to right,
+      rgba(11, 9, 9, 1) 0%,
+      rgba(11, 9, 9, 0.9) 35%,
+      rgba(11, 9, 9, 0.2) 75%,
+      rgba(11, 9, 9, 0) 100%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Feature Icon Section */
+.feature-icons-section {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.feature-icon h2 {
+  font-size: 20px;
+}
+
+/* Our Story Section */
+#our-story-section {
+  width: 765px;
+  height: 350px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 400px 365px;
+  gap: 10px;
+  justify-items: center;
+  background-color: #FDF6ED;
+  color: #0A2947;
+}
+
+#our-story-content {
+  width: 350px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+#our-story {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#our-story-content h3 {
+  width: 200px;
+  font-size: 26px;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+}
+
+#passion-content {
+  line-height: 1;
+}
+
+#our-story-content button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFBF00;
+  color: #0B0909;
+  font-weight: 600;
+}
+
+#our-story-content button:hover {
+  background-color: #FDF6ED;
+  border: 1px solid #FFBF00;
+}
+
+#our-story-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#cooking-passion {
+  width: 200px;
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+#good-food-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#good-food-content p {
+  color: #9D6638;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
