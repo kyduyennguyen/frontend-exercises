@@ -7,9 +7,9 @@ This layout was inspired by the design style from:
 
 ## [Coding with Parvez](https://www.facebook.com/codingwithparvez)
 
-## Live Page
+## Design Reference
 
-https://kyduyennguyen.github.io/frontend-exercises/restaurantweblayout/index.html
+[Restaurant Layout Mockup PDF](./restaurant-layout-reference.pdf)
 
 ## Project Overview
 
