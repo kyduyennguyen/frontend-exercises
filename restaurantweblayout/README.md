@@ -9,7 +9,7 @@ This layout was inspired by the design style from:
 
 ## Design Reference
 
-[Restaurant Layout Mockup PDF](./restaurant-layout-reference.pdf)
+[Restaurant Layout Mockup PDF](./assets/tastybite-restaurant-webpage-layout.pdf)
 
 ## Project Overview
 
